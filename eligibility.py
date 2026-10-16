@@ -8,6 +8,6 @@ def validate_request(visitor_age: int, party_size: int) -> None:
 
 def shipping_cost(total: int) -> int:
     """Shipping is free only when total is greater than 50."""
-    if total >= 50:  # intentionally incorrect; students should diagnose CI
+    if total > 50:  # intentionally incorrect; students should diagnose CI
         return 0
     return 7
