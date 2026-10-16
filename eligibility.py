@@ -1,6 +1,6 @@
 def validate_request(visitor_age: int, party_size: int) -> None:
     """Reject negative ages and party sizes outside 1..8."""
-    if visitor_age <= 0:
+    if visitor_age < 0:
         raise ValueError('visitor_age must be non-negative')
     if party_size < 1 or party_size > 8:
         raise ValueError('party_size must be between 1 and 8')
